@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTE INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- AWESOME ÍCONE CARRINHO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Barack O'BRAHMA</title>
+</head>
+
+<body>
+
+    <!-- COMEÇO DO HEADER -->
+    <header class="w-full h-[600px] bg-zinc-900 bg-home bg-auto bg-top">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="assets/header-icon.png" alt="Logo Barack Obama"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+            <img src="assets/header-title.png" alt="Título do Header" class="w-200 h-40" />
+            <span class="text-white font-medium">Rua Independência, 12, Porto Alegre, RS</span>
+
+            <div class="bg-green-400 px-4 py-3 rounded-lg mt-10" id="date-span">
+                <span class="text-white font-medium">Seg. a Dom. - 18:00 às 22:00</span>
+            </div>
+        </div>
+    </header>
+    <!-- FIM DO HEADER -->
+
+    <!-- COMEÇO DO MENU -->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+    </h2>
+
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <!-- PRODUTOS ITEM -->
+            <div class="flex gap-4">
+                <img src="./assets/hamburguer-duplo.jpg" alt="Hambúrguer Duplo"
+                    class="w-28 h-28 rounded-md object-cover hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Cheese Burger Duplo</p>
+                    <p class="text-sm">Pão levinho de fermentação natural, burger 160g, queijo prato e maionese da casa.
+                    </p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 34.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cheese Burger Duplo"
+                            data-price="34.90">
+                            <i class="fa fa-shopping-cart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <img src="./assets/hamburguer-tradicional.jpg" alt="Hambúrguer Tradicional"
+                    class="w-28 h-28 rounded-md object-cover hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Cheese Burger Tradicional</p>
+                    <p class="text-sm">Pão fresquinho de fermentação natural, burger de 160g, queijo prato derretido e
+                        maionese caseira.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 32.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cheese Burger Tradicional"
+                            data-price="32.90">
+                            <i class="fa fa-shopping-cart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <img src="./assets/pastel-queijo.jpg" alt="Pastel de Queijo"
+                    class="w-28 h-28 rounded-md object-cover hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Pastel de Queijo</p>
+                    <p class="text-sm">Massa fina e crocante, recheada com queijo prato derretido, frita na hora.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 14,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pastel de Queijo"
+                            data-price="14.90">
+                            <i class="fa fa-shopping-cart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <img src="./assets/pastel-carne.jpg" alt="Pastel de Carne"
+                    class="w-28 h-28 rounded-md object-cover hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Pastel de Carne</p>
+                    <p class="text-sm">Massa crocante e bem recheada, carne moída temperada com cebola e alho, frita na
+                        hora.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 14,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pastel de Carne"
+                            data-price="14.90">
+                            <i class="fa fa-shopping-cart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <img src="./assets/coxinha-frango.jpg" alt="Coxinha de Frango"
+                    class="w-28 h-28 rounded-md object-cover hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Coxinha de Frango</p>
+                    <p class="text-sm">Massa fresquinha de fermentação natural, frango desfiado temperado, recheio
+                        cremoso e crocante por fora.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 9,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coxinha de Frango"
+                            data-price="9.90">
+                            <i class="fa fa-shopping-cart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <img src="./assets/iscas-peixe.jpg" alt="Iscas de Peixe"
+                    class="w-28 h-28 rounded-md object-cover hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Iscas de Peixe</p>
+                    <p class="text-sm">Porção de peixe empanado em crosta dourada, acompanhado de molho tártaro
+                        especial e limão siciliano.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 27,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Iscas de Peixe"
+                            data-price="27.90">
+                            <i class="fa fa-shopping-cart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTOS ITEM -->
+
+        </main>
+
+        <!-- BEBIDAS -->
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">
+                Bebidas
+            </h2>
+        </div>
+
+        <!-- GRID BEBIDAS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+            id="menu">
+
+            <!-- COMEÇO BEBIDAS ITEM -->
+            <div class="flex gap-4">
+                <img src="./assets/refri-1.jpg" alt="Coca-cola"
+                    class="w-28 h-28 rounded-md object-cover hover:scale-110 hover:-rotate-2 duration-300" />
+                <div class="w-full">
+                    <p class="font-bold">Coca-Cola</p>
+                    <p class="text-sm">Bebida refrescante e tradicional, ideal para acompanhar qualquer refeição,
+                        servida bem gelada.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-Cola"
+                            data-price="6.90">
+                            <i class="fa fa-shopping-cart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <img src="./assets/refri-2.jpg" alt="Guaraná Antarctica"
+                    class="w-28 h-28 rounded-md object-cover hover:scale-110 hover:-rotate-2 duration-300" />
+                <div class="w-full">
+                    <p class="font-bold">Guaraná Antarctica</p>
+                    <p class="text-sm">Refrigerante brasileiro clássico, feito com guaraná da Amazônia, perfeito
+                        para refrescar seu dia.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guaraná Antarctica"
+                            data-price="6.90">
+                            <i class="fa fa-shopping-cart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <img src="./assets/brahma.jpg" alt="Brahma"
+                    class="w-28 h-28 rounded-md object-cover hover:scale-110 hover:-rotate-2 duration-300" />
+                <div class="w-full">
+                    <p class="font-bold">Brahma</p>
+                    <p class="text-sm">Cerveja lager brasileira, leve e saborosa, servida bem gelada para um brinde
+                        perfeito.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 8,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Brahma" data-price="8.90">
+                            <i class="fa fa-shopping-cart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <img src="./assets/caipirinha.jpg" alt="Caipirinha"
+                    class="w-28 h-28 rounded-md object-cover hover:scale-110 hover:-rotate-2 duration-300" />
+                <div class="w-full">
+                    <p class="font-bold">Caipirinha</p>
+                    <p class="text-sm">Tradicional drink brasileiro, preparado com cachaça, limão fresco, açúcar e
+                        gelo, ideal para momentos descontraídos.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 12,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Caipirinha"
+                            data-price="12.90">
+                            <i class="fa fa-shopping-cart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM BEBIDAS ITEM -->
+
+        </div>
+        <!-- FIM GRID BEBIDAS -->
+
+    </div>
+    <!-- FIM DO MENU -->
+
+    <!-- COMEÇO BUTTON CARD FOOTER -->
+
+    <footer class="w-full bg-footer-image bg-center bg-no-repeat bg-cover py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-red-700 font-bold hover:text-red-600 text-sm md:text-xl" id="cart-btn">
+            <span>Ver meu carrinho</span>
+            <i class="fa fa-shopping-cart text-lg"></i>
+            <span>(<span id="cart-count"> 2 </span>)</span>
+        </button>
+    </footer>         
+    
+    <!-- FIM BUTTON CARD FOOTER -->
+
+</body>
+
+</html>
