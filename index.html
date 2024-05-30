@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- TOASTIFY-JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <!-- FONTE INTER -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -239,9 +242,7 @@
     <!-- FIM DO MENU -->
 
     <!-- MODAL CART -->
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
-    id="cart-modal"
-    >
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-xl md:text-2xl mb-2">Meu carrinho</h2>
 
@@ -250,12 +251,8 @@
             <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
 
             <p class="font-bold">Endereço de Entrega:</p>
-            <input
-            type="text"
-            placeholder="Digite seu endereço completo..."
-            id="address"
-            class="w-full border-2 p-1 rounded my-1"
-            />
+            <input type="text" placeholder="Digite seu endereço completo..." id="address"
+                class="w-full border-2 p-1 rounded my-1" />
             <p class="text-red-600 hidden" id="address-warn">Certifique-se do envio de seu endereço completo!</p>
 
             <div class="flex items-center justify-between mt-5 w-full">
@@ -269,15 +266,20 @@
 
     <!-- COMEÇO BUTTON CARD FOOTER -->
 
-    <footer class="w-full bg-footer-image bg-center bg-no-repeat bg-cover py-2 fixed bottom-0 z-40 flex items-center justify-center">
-        <button class="flex items-center gap-2 text-red-700 font-bold hover:text-red-600 text-sm md:text-xl" id="cart-btn">
+    <footer
+        class="w-full bg-footer-image bg-center bg-no-repeat bg-cover py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-red-700 font-bold hover:text-red-600 text-sm md:text-xl"
+            id="cart-btn">
             <span>Ver meu carrinho</span>
             <i class="fa fa-shopping-cart text-lg"></i>
             <span>(<span id="cart-count"> 0 </span>)</span>
         </button>
-    </footer>         
-    
+    </footer>
+
     <!-- FIM BUTTON CARD FOOTER -->
+
+    <!-- SCRIPT TOASTIFY-JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <!-- SCRIPT.JS  -->
     <script src="./script.js"></script>
